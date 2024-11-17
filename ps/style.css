@@ -1,88 +1,60 @@
+@font-face {
+	font-family: Gotham Rounded;
+	src: url("font.otf") format("opentype");
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: Gotham Rounded;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: url("bg.jpeg") no-repeat fixed center;
+	background-size: cover;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+	width: 700px;
+	max-width: 90%;
 }
 
-h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+.black {
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 2px;
 }
 
-h2 {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 30px;
+.answer {
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	gap: 10px;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+.btn {
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 30px;
+	background-color: #f7ce6a;
+	outline: none;
+	color: black;
+	text-decoration: none;
 }
 
-strong {
-    color: #d23a3a;
+.black h1 {
+	color: yellow;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #ffcc00; /* Amarelo vibrante */
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 30px;
-}
-
-.cta-button:hover {
-    background-color: #e6b800; /* Cor amarela mais escura no hover */
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.footer {
-    font-size: 12px;
-    color: #888;
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px 0;
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        font-size: 18px;
-        padding: 12px 30px;
-    }
+.black p {
+	font-size: 18px;
+	color: white;
 }
