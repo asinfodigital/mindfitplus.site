@@ -1,0 +1,73 @@
+ /* Reset de margens e paddings */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Botão de ação */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0073e6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .cta-button {
+        font-size: 0.95em;
+        padding: 10px 20px;
+    }
+}
